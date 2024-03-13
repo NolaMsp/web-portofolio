@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 50000px) {
+  /* Aturan CSS untuk layar dengan lebar maksimum 600px */
+  /* Misalnya, aturan untuk mengatur lebar elemen */
+  .hero {
+    height: 200px; /* Ubah tinggi hero sesuai kebutuhan */
+  }
+}
+
+
+body {
+  background: #eff4fd;
+  height: 100vh;
+}
+.hero {
+  text-align: right;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #eff4fd;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+}
+
+logo {
+  max-width: 100px;
+  height: auto;
+  margin-top: 50px;
+}
+nav {
+  text-align: right;
+  display: flex;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  margin-top: -130px;
+  margin-left: auto; /* Mendorong elemen berikutnya ke kanan */
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: aqua;
+}
+
+.Home {
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Tambahkan latar belakang semi-transparan */
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px; /* Tambahkan sudut melengkung pada detel box */
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1); /* Optional: Tambahkan bayangan untuk efek dimensi */
+  z-index: 1000;
+  margin-top: 10px;
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  bottom: 80px;
+}
+
+.Home h1 {
+  font-size: 35px;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+span {
+  color: aqua;
+}
+
+.Home p {
+  color: #555;
+  line-height: 22px;
+}
+
+.Home a {
+  background: #212121;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #eff4fd;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 50px;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  position: relative;
+  top: -70px;
+}
+
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  margin-top: 20px;
+  left: 55%;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images:hover .awan {
+  bottom: 40px;
+}
+
+.images:hover .Nola {
+  left: 30%;
+}
+
+#contact .contact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -10px;
+  height: 100%;
+}
+
+#contact .contact-item {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+}
+
+#contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+#contact .contact {
+  flex-direction: column;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 20vh;
+}
+#contact .contact-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+}
+#contact .contact-item {
+  width: 30%;
+  margin: 0;
+  flex-direction: row;
+}
+#contact .contact-item .icon {
+  height: 100px;
+  width: 100px;
+}
+#contact .contact-item .icon img {
+  object-fit: contain;
+}
+#contact .contact-item .contact-info {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+h4 {
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-size: 25px;
+  height: 15px;
+}
+ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ol a {
+  text-decoration: none;
+  transition: 0.2s;
+  text-align: center;
+  margin: 10px;
+}
+
+ol li img {
+  width: 80px;
+  height: auto;
+  display: flexbox;
+  border-radius: 8px;
+}
+ol li:first-child a {
+  color: rgb(242, 16, 219);
+}
+
+ol li:nth-child(2) a {
+  color: green;
+}
+
+ol li:last-child a {
+  color: red;
+}
+
+ol a:hover {
+  opacity: 0.7;
+}
+footer {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  height: 50px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+/* Styling tambahan (opsional) */
+body {
+  margin: 0; /* Hilangkan margin bawaan body */
+  font-family: "Arial", sans-serif; /* Ganti jenis font jika perlu */
+}
+
+.Education-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-title {
+  margin-top: 10px;
+}
+
+#Education .Education {
+  width: 80%;
+  padding: 5px; /* Mengurangi padding */
+  text-align: center;
+  border-radius: 2px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column; /* Mengatur elemen menjadi kolom */
+  box-shadow: 0px 0px 20px 0 #0000002c; /* Mengurangi ukuran bayangan */
+}
+
+#Education .Education .icon {
+  width: 100%; /* Mengisi lebar kontainer dengan gambar */
+  margin-bottom: 2px;
+}
+
+#Education .Education .icon img {
+  max-width: 40%; /* Pastikan gambar tidak melebihi lebar kontainer */
+  height: auto;
+}
+
+#Education .Education h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 5px; /* Menambahkan jarak antara gambar dan teks */
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rino & Wati</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"> 
+    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">
+        Rino & Wati
+        <span class="heading-subtext">akan menikah!</span>
+      </h1>
+    </header>
+    <a data-scroll class="fixed-button" href="#formulir" id="FormulirButton">Formulir</a> 
+    <section class="section">
+      <h2 class="sub-heading">Overview</h2>
+      <p>Sistem perkawinan yang telah dibuat diharapkan mampu menjadikan
+        hubungan antara laki-laki dan perempuan dalam penuh kehormatan dan saling
+        meridhoi. Perkawinan merupakan jalan dan saluran yang paling baik dan selamat
+        bagi syahwat sebagai naluri manusia untuk selanjutnya melahirkan dan
+        memelihara generasi baru dengan baik dan juga akan menciptakan kondisi dan
+        suasana yang tertib dan aman dalam kehidupan sosial.
+      </p>
+    </section>
+    <section class="section">
+      <h2 class="sub-heading">The Details</h2>
+      <div class="details">
+        <i class="fas fa-calendar-check"></i>
+        <h3 class="details-heading">When</h3>
+        <p>February 18, 2032</p>
+        <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
+      </div>
+      <div class="details">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3 class="details-heading">Location</h3>
+        <p><a rel="noopener" href="#">Basko Hotel</p>
+        <img class="basko-image" src="./img/basko.jpg" alt="Basko" />
+      </div>
+      <div class="details">
+        <i class="fas fa-suitcase"></i>
+        <h3 class="details-heading">Penginapan</h3>
+        <p>"Kami sangat senang untuk berbagi bahwa kami telah memilih Basko Hotel sebagai lokasi penginapan untuk pernikahan kami. Dengan keindahan dan kenyamanannya yang tak tertandingi, Basko Hotel menjadi pilihan yang sempurna untuk mengadakan momen bersejarah ini. Kami berharap Anda dapat bergabung dengan kami untuk merayakan cinta dan kebahagiaan di tempat yang istimewa ini. Terima kasih telah menjadi bagian dari perjalanan kami menuju kebahagiaan bersama di Basko Hotel."</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-plane-departure"></i>
+        <h3 class="details-heading">Gombalan</h3>
+        <p>"Kau adalah impian yang menjadi nyata, cinta yang selalu aku cari. Hari ini, di hari pernikahan kita, aku bersyukur kepada Tuhan karena telah memberikan aku kesempatan untuk berbagi hidup denganmu. Aku tak sabar untuk menjalani setiap momen bersamamu. Selamat hari pernikahan, sayang."</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-asterisk"></i>
+        <h3 class="details-heading">Other Notes</h3>
+        <p>Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.</p>
+        <p>Also, your presence is the only present we desire. No gift required.</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-reply"></i>
+        <h3 class="details-heading" id="rsvp">RSVP</h3>
+        <p>[Embed your RSVP form here]</p>
+        <!-- Include Embedded link of Google Form here in place of # -->
+        <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+      </div>
+    </section>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script defer>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var rsvpButton = document.getElementById('rsvpButton')
+      rsvpButton.addEventListener('click',hideButton,false);
+
+      function hideButton() {
+        rsvpButton.style.display = 'none';
+      }   
+    </script>
+  </body>
+</html>
